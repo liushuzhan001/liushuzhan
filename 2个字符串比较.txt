@@ -1,0 +1,6 @@
+$a = "工商管理";
+$b = "工管";
+preg_match_all("/./u", $a, $arr1);
+preg_match_all("/./u", $b, $arr2);
+print_r(array_intersect($arr1[0],$arr2[0]));
+原理：通过正则表达式分割中文字符串，转化为数组，通过array_intersect()比较数组中的交集
