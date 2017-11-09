@@ -1,0 +1,11 @@
+php文件运行设置
+set_time_limit(5000);
+ini_set('memory_limit','1628M');
+
+导入sql设置
+wait_timeout=2880000 
+interactive_timeout = 2880000 
+max_allowed_packet = 100M
+
+禁用DNS解析，加快本地查询
+skip-name-resolve
